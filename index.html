@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="D:\PS\webproj\commericalsite\images\Amazon-logo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <style>
+    
+
+    nav{
+        border: 2px black solid;
+        height:60px;
+        width: 100%;
+        background-color: black;
+        display: flex;  
+        color: white;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        
+        
+    }
+    .nav-logo img{
+        height: 50px;
+        width: 100%;
+        
+    }
+    .nav-logo{
+        margin-left: 0.5%;
+        border: 1px solid gold;
+        width: 9%;
+    }
+    
+    .nav-loc-icon .material-symbols-outlined{
+        color: aliceblue;
+        font-size: 1.5vw;
+        
+    }
+    .nav-flag img{
+        width: 2%;  
+     }
+    
+    
+    .nav-loc{
+        height:60px ;
+        width: 12%;
+        color: white;
+        border: 2px solid gold;
+        display: flex;
+    }
+    .nav-loc-icon{
+        border: solid 1px red;
+        padding-top: 15%;
+        /* height: 60px; */
+    }
+    
+    .nav-loc-text{
+        border: solid 1px red;
+        width: 90%;
+        color: white;
+        line-height:0px;
+    }
+    /* .material-symbols-outlined{
+        border: 1px solid blue;
+    } */
+     .nav-acc,.nav-cart,.nav-ord{
+        border: 2px solid red;
+        /* display: flex; */
+    }
+    .nav-flag {
+        border: 2px solid red; 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width:5%;
+        margin-right: 1%;
+    }
+    .search{
+        display: flex;
+        border: 2px solid red;
+        width: 50%;
+        background-color: white;
+        
+    }
+    .nav-flag img{
+        border: 2px solid blue;
+        width:30%;
+        /* padding-bottom: 20%; */
+    }
+    .nav-acc{
+        width:10%;
+        margin-right: 0.25%;
+        line-height: 0;
+    }
+    .nav-ord{
+        width: 7%;
+        margin-right: 0.25%;
+        line-height: 0;
+    }
+    .nav-cart{
+        /* width: 5%; */
+        margin-right: 0.5%;
+        display: flex;
+    }
+    .nav-flag .material-symbols-outlined{
+        border: red solid 1px;
+        padding-left: 0%;
+        width: 10%;
+
+    }
+    .nav-flag .h6{
+        width:40%;
+        padding-bottom: 20%;
+    }
+    .nav-cart .material-symbols-outlined{
+        width: 80%;
+        padding-top: 20%;
+        border:solid 1px blue;
+    }
+    .nav-cart .cart{
+        width: 20%;
+        padding-top: 50%;
+        border: solid 2px greenyellow;
+    }
+    .nav2{
+        height: 40px;
+        width: 100%;
+        border: solid 5px red ;
+    }
+    .home-content div{
+        height: 450px;
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+
+    }
+    .home-content {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 200px;
+
+    }
+    .home-content img{
+        width: 100%;
+    }
+    .home-content-box3 img{
+        height: 220px;
+        
+    }
+    .nav2{
+        margin-top: 5px;
+        position: sticky;
+        display: flex;
+        z-index:1000;
+        background-color: grey;
+        color: white;
+        
+    }
+    .carousel{
+        margin-top:10px;
+    }
+    .carousel-control-prev-icon{
+        margin-bottom: 250px;
+        background-color: black;
+    }
+    
+    .carousel-control-next-icon{
+        margin-bottom: 250px;
+        background-color: black;
+    }
+    .home-content-box1-1-text,.home-content-box1-2-text,.home-content-box2-1-text,.home-content-box2-2-text,.home-content-box3-1-text,.home-content-box3-2-text,.home-content-box4-1-text,.home-content-box4-2-text {
+        display: flex; 
+        justify-content: space-evenly;   
+    }
+    .home-content-box1-1, .home-content-box1-2,.home-content-box2-1,.home-content-box2-2,.home-content-box3-1,.home-content-box3-2,.home-content-box4-1,.home-content-box4-2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .home-content2{
+        display: flex;
+        margin-top: -200px;
+    }
+    .home-content2-box1-1-text, .home-content2-box1-2-text, .home-content2-box2-1-text, .home-content2-box2-2-text,  
+    .home-content2-box3-1-text, .home-content2-box3-2-text, .home-content2-box4-1-text, .home-content2-box4-2-text{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!--Navigation--starts-->
+        <nav>
+            <div class="nav-logo">
+                <img src="D:\PS\webproj\commericalsite\images\amzonlogomnoj.jpg" alt="no image">    
+            </div>
+            <div class="nav-loc">
+                <div class="nav-loc-icon">
+                    <span class="material-symbols-outlined">home_pin</span>
+
+                </div>
+                <div class="nav-loc-text">
+                    <h5>Hello</h5>
+                    <h4>Select your address</h4>    
+                </div>
+            </div>
+            <div class="search">
+                <h1>search bar</h1>
+            </div>
+            <div class="nav-flag">
+                <img src="D:\PS\webproj\commericalsite\images\Indiaflag.png" alt="">
+                <h5>ENG</h5>
+                <span class="material-symbols-outlined">arrow_drop_down</span>
+
+            </div>
+            <div class="nav-acc">
+                <h5>Hello, sign in</h5>
+                <h4>Account & List</h4>
+            </div>
+            <div class="nav-ord">
+                <h5>Returns</h5>
+                <h4>&Orders</h4>
+            </div>
+            <div class="nav-cart">
+                <span class="material-symbols-outlined">add_shopping_cart</span>
+                <div class="cart">
+                <h5>Cart</h5>
+            </div>
+        </div>
+
+        </nav>
+        <!---Navigation--ends-->
+        <!--second navaigation starts-->
+        <div class="nav2">
+            <h5>All</h5>
+            <h5>Amazon mini Tv</h5>
+            <h5>Sellers</h5>
+            <h5>Best Sellers</h5>
+            <h5>Mobiles</h5>
+            <h5>Todays Deals</h5>
+            <h5>Customer Service</h5>
+            <h5>New Release</h5>
+            <h5>Electronics</h5>
+            <h5>Prime</h5>
+
+        </div>
+
+         <!--second navaigation ends-->
+
+         <!--home starts carosel-->
+         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="D:\PS\webproj\commericalsite\images\cor1.jpg" class="d-block w-100" alt="No Image">
+              </div>
+              <div class="carousel-item">
+                <img src="D:\PS\webproj\commericalsite\images\cor2.jpg" class="d-block w-100" alt="No Image">
+              </div>
+              <div class="carousel-item">
+                <img src="D:\PS\webproj\commericalsite\images\cor3.jpg" class="d-block w-100" alt="No Image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!--home ends carosel-->
+          <!---home content starts-->
+            <div class="home-content">
+                <div class="home-content-box1" >
+                    <h5>Up to 70% off | Clearance store</h5>
+                    <img src="D:\PS\webproj\commericalsite\images\Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg" alt="No image">
+                </div>
+
+                <div class="home-content-box2">
+                    <h5>Medicines | Up to 30% off</h5>
+                    <img src="D:\PS\webproj\commericalsite\images\pharmacy.jpg" alt="No Image">
+                </div>
+
+                <div class="home-content-box3">
+                    <h5>Bestselling Smartwatch starts at ₹1,999</h5>
+                    <img src="D:\PS\webproj\commericalsite\images\watch.jpg" alt="No Image">
+                </div>
+
+                <div class="home-content-box4">
+                    <img src="D:\PS\webproj\commericalsite\images\gym.jpg" alt="">
+                </div>
+            </div>
+
+           <!---home content ends-->
+
+           <!--home--content--two --starts-->
+           <div class="home-content2">
+                <div class="home-content2-box1" >
+                    <h5>Revamp your home in style</h5>
+                    <div class="home-content2-box1-1">
+                        <img src="D:\PS\webproj\commericalsite\images\bedsheet.jpg" alt="No Image">
+                        <img src="D:\PS\webproj\commericalsite\images\homedeco.jpg" alt="">
+                    </div>
+                    <div class="home-content2-box1-1-text">
+                            <p>Sofa</p>
+                            <p>Photos</p>
+                    </div> 
+                    <div class="home-content2-box1-2">
+                        <img src="D:\PS\webproj\commericalsite\images\homestore.jpg" alt="">
+                        <img src="D:\PS\webproj\commericalsite\images\shoerack.jpg" alt="">
+                    </div>
+                    <div class="home-content2-box1-2-text">
+                        <p>homestore</p>
+                        <p>shoerack</p>
+                    </div>
+                </div>
+
+                <div class="home-content2-box2">
+                    <h5>Appliances for your home,</h5>
+                    <div class="home-content2-box2-1">
+                        <img src="D:\PS\webproj\commericalsite\images\microwave.jpg" alt="">
+                        <img src="D:\PS\webproj\commericalsite\images\refrigerator.jpg" alt="">
+                    </div>
+                    <div class="home-content2-box2-1-text">
+                        <p>Microwave</p>
+                        <p>Refrigerator</p>
+                    </div>
+                    <div class="home-content2-box2-2">
+                        <img src="D:\PS\webproj\commericalsite\images\washingmachine.jpg" alt="">
+                        <img src="D:\PS\webproj\commericalsite\images\choppers.jpg" alt="">
+                    </div>
+                    <div class="home-content2-box2-2-text">
+                        <p>washingmachine</p>
+                        <p>Choppers</p>
+                    </div>
+                </div>
+
+
+
+                <div class="home-content2-box3">
+                    <h5>Electronics devices for home office</h5>
+                <div class="home-content2-box3-1">
+                    <img src="D:\PS\webproj\commericalsite\images\microwave.jpg" alt="">
+                    <img src="D:\PS\webproj\commericalsite\images\refrigerator.jpg" alt="">
+                </div>
+                <div class="home-content2-box3-1-text">
+                    <p>Microwave</p>
+                    <p>Refrigerator</p>
+                </div>
+                <div class="home-content2-box3-2">
+                    <img src="D:\PS\webproj\commericalsite\images\microwave.jpg" alt="">
+                    <img src="D:\PS\webproj\commericalsite\images\refrigerator.jpg" alt="">
+                </div>
+                <div class="home-content2-box3-2-text">
+                    <p>Microwave</p>
+                    <p>Refrigerator</p>
+                </div>
+                </div>
+                
+
+                <div class="home-content2-box4">
+                    <h5>Appliances for your home</h5>
+                <div class="home-content2-box4-1">
+                    <img src="D:\PS\webproj\commericalsite\images\microwave.jpg" alt="">
+                    <img src="D:\PS\webproj\commericalsite\images\refrigerator.jpg" alt="">
+                </div>
+                <div class="home-content2-box4-1-text">
+                    <p>Microwave</p>
+                    <p>Refrigerator</p>
+                </div>
+                <div class="home-content2-box4-2">
+                    <img src="D:\PS\webproj\commericalsite\images\microwave.jpg" alt="">
+                    <img src="D:\PS\webproj\commericalsite\images\refrigerator.jpg" alt="">
+                </div>
+
+                <div class="home-content-box4-2-text">
+                    <p>Microwave</p>
+                    <p>Refrigerator</p>
+                </div>
+                </div>
+                </div>
+             <!--home--content--two --ends-->
+    </div>
+    
+</body>
+</html>
